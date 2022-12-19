@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Bill Payment</title>
+</head>
+<body>
+    <h1>Bill Calculator</h1>
+    <div data-ng-app="" data-ng-init="quantity1;price1;quantity2;price2;quantity3;price3">
+        <p>
+            Quantity1<input type="number" data-ng-model="quantity1">
+            Quantity2<input type="number" data-ng-model="quantity2">
+            Quantity3<input type="number" data-ng-model="quantity3">
+        </p>
+        <p>
+            price1<input type="number" data-ng-model="price1">
+            price2<input type="number" data-ng-model="price2">
+            price3<input type="number" data-ng-model="price3">
+        </p>
+        <p>Total Price:{{(quantity1*price1)+(quantity2*price2)+(quantity3*price3)}}</p>
+    </div>
+</body>
+</html>
